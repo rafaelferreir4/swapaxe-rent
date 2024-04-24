@@ -1,3 +1,10 @@
-# Put overrides to your pantheon.upstream.yml file here.
-# For more information, see: https://pantheon.io/docs/pantheon-yml/
+---
 api_version: 1
+
+# PHP Version:
+# https://pantheon.io/docs/pantheon-yml#php-version
+php_version: 8.3
+
+# Drush Version
+# https://pantheon.io/docs/pantheon-yml/#drush-version
+drush_version: 11
