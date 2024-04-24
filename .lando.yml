@@ -1,0 +1,6 @@
+name: swapaxe-rent
+recipe: pantheon
+config:
+  framework: drupal8
+  site: swapaxe-rent
+  id: 5d26325e-a9eb-457f-940b-89d9270b1db6
