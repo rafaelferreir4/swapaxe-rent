@@ -1,0 +1,7 @@
+# Main theme library.
+global:
+  js:
+    js/swapaxe.js: {}
+  css:
+    theme:
+      css/swapaxe.css: {}
