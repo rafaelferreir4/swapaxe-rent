@@ -20,8 +20,19 @@
         "drupal/core-recommended": "^10",
         "pantheon-systems/drupal-integrations": "^10",
         "cweagans/composer-patches": "^1.7",
-        "drush/drush": "^11 || ^12",
-        "drupal/gin": "^3.0@RC"
+        "drush/drush": "^12.4.3",
+        "drupal/gin": "^3.0@RC",
+        "drupal/metatag": "^2.0",
+        "drupal/mailsystem": "^4.4",
+        "drupal/imageapi_optimize": "^4.0",
+        "drupal/seo_checklist": "^5.2",
+        "drupal/redirect": "^1.9",
+        "drupal/simple_sitemap": "^4.1",
+        "drupal/pathauto": "^1.12",
+        "drupal/admin_toolbar": "^3.4",
+        "drupal/token": "^1.14",
+        "drupal/webprofiler": "^10.1",
+        "drupal/devel": "^5.0"
     },
     "require-dev": {
         "drupal/core-dev": "^10"

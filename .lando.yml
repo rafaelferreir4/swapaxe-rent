@@ -1,6 +1,19 @@
 name: swapaxe-rent
 recipe: pantheon
 config:
-  framework: drupal8
+  framework: drupal10
   site: swapaxe-rent
   id: 5d26325e-a9eb-457f-940b-89d9270b1db6
+services:
+  nodejs:
+    type: node
+    version: '20'
+    globals:
+      sass: latest
+tooling:
+  npm:
+    service: nodejs
+  node:
+    service: nodejs
+  sass:
+    service: nodejs
