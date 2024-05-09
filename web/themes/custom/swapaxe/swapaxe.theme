@@ -8,22 +8,9 @@ declare(strict_types=1);
  */
 
 /**
- * Implements hook_preprocess_HOOK() for html.html.twig.
+ * Implements hook_preprocess_HOOK() for menu-local-task.html.twig.
  */
-function swapaxe_preprocess_html(array &$variables): void {
-
+function swapaxe_preprocess_menu_local_task(array &$variables): void {
+  $variables['url'] = 'hahaha';
 }
 
-/**
- * Implements hook_preprocess_HOOK() for page.html.twig.
- */
-function swapaxe_preprocess_page(array &$variables): void {
-
-}
-
-/**
- * Implements hook_preprocess_HOOK() for node.html.twig.
- */
-function swapaxe_preprocess_node(array &$variables): void {
-
-}
