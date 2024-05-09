@@ -1,0 +1,22 @@
+uuid: 43dfd9c6-53f8-402f-9728-215726e26d51
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - swapaxe
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: swapaxe_content
+theme: swapaxe
+region: content
+weight: -4
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: d67eda5d-a8dd-465e-b83c-61469c588711
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - swapaxe
+_core:
+  default_config_hash: n_nlgjggHVfQt2H__zvLOKB2YtjPDbQ5tHijF9LE1aM
+id: swapaxe_site_branding
+theme: swapaxe
+region: header
+weight: -2
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

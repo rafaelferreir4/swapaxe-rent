@@ -1,0 +1,22 @@
+uuid: 8a3fbbd4-a180-4cb3-818d-ab926354d697
+langcode: en
+status: true
+dependencies:
+  theme:
+    - swapaxe
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: swapaxe_primary_local_tasks
+theme: swapaxe
+region: header
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }
