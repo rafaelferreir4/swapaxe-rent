@@ -1,0 +1,64 @@
+{#
+/**
+ * @file
+ * Default theme implementation for status messages.
+ *
+ * Displays status, error, and warning messages, grouped by type.
+ *
+ * An invisible heading identifies the messages for assistive technology.
+ * Sighted users see a colored box. See http://www.w3.org/TR/WCAG-TECHS/H69.html
+ * for info.
+ *
+ * Add an ARIA label to the contentinfo area so that assistive technology
+ * user agents will better describe this landmark.
+ *
+ * Available variables:
+ * - message_list: List of messages to be displayed, grouped by type.
+ * - status_headings: List of all status types.
+ * - attributes: HTML attributes for the element, including:
+ *   - class: HTML classes.
+ *
+ * @ingroup themeable
+ */
+#}
+<div data-drupal-messages class="max-w-[2520px] mx-auto xl:px-20 md:px-10 sm:px-2 px-4">
+{% for type, messages in message_list %}
+  {% if type == 'status' %}
+    {% set border_color = 'border-green-400' %}
+    {% set bg_color = 'bg-green-50' %}
+    {% set svg_color = 'text-green-400' %}
+    {% set text_color = 'text-green-700' %}
+    {% set svg_image = 'M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z' %}
+  {% elseif type == 'warning' %}
+    {% set borderColor = 'border-yellow-400' %}
+    {% set bgColor = 'bg-yellow-50' %}
+    {% set svgColor = 'text-yellow-400' %}
+    {% set textColor = 'text-yellow-700' %}
+    {% set svgImage = 'M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495zM10 5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0v-3.5A.75.75 0 0110 5zm0 9a1 1 0 100-2 1 1 0 000 2z' %}
+  {% else %}
+    {% set borderColor = 'border-red-400' %}
+    {% set bgColor = 'bg-red-50' %}
+    {% set svgColor = 'text-red-400' %}
+    {% set textColor = 'text-red-700' %}
+    {% set svgImage = 'M10 18a8 8 0 100-16 8 8 0 000 16zM8.28 7.22a.75.75 0 00-1.06 1.06L8.94 10l-1.72 1.72a.75.75 0 101.06 1.06L10 11.06l1.72 1.72a.75.75 0 101.06-1.06L11.06 10l1.72-1.72a.75.75 0 00-1.06-1.06L10 8.94 8.28 7.22z' %}
+  {% endif %}
+
+  <div aria-label="{{ status_headings[type] }}">
+    {% for message in messages %}
+      <div class="border-l-4 {{ border_color }} {{ bg_color }} p-4">
+        <div class="flex">
+          <div class="flex-shrink-0">
+            <svg class="h-5 w-5 {{ svg_color }}" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="{{ svg_image }}" clip-rule="evenodd" />
+            </svg>
+          </div>
+          <div class="ml-3">
+            <h2 class="visually-hidden">{{ status_headings[type] }}</h2>
+            <p class="text-sm {{ text_color }}">{{ message }}</p>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+{% endfor %}
+</div>

@@ -7,6 +7,7 @@ core_version_requirement: ^10
 libraries:
   - swapaxe/global
 regions:
+  system: 'System'
   header: 'Header'
   primary_menu: 'Primary menu'
   secondary_menu: 'Secondary menu'
