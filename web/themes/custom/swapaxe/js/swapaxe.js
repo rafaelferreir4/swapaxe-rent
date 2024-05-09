@@ -9,8 +9,6 @@
   Drupal.behaviors.swapaxe = {
     attach (context, settings) {
 
-      console.log('It works!');
-
     }
   };
 

@@ -4,4 +4,5 @@ global:
     js/swapaxe.js: {}
   css:
     theme:
+      css/tailwind.css: {}
       css/swapaxe.css: {}
