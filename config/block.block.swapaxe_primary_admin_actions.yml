@@ -8,8 +8,8 @@ _core:
   default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
 id: swapaxe_primary_admin_actions
 theme: swapaxe
-region: header
-weight: -6
+region: system
+weight: -5
 provider: null
 plugin: local_actions_block
 settings:

@@ -8,7 +8,7 @@ _core:
   default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
 id: swapaxe_primary_local_tasks
 theme: swapaxe
-region: header
+region: system
 weight: -4
 provider: null
 plugin: local_tasks_block
