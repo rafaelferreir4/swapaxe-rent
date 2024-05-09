@@ -2,14 +2,12 @@
  * @file
  * swapaxe behaviors.
  */
-(function (Drupal) {
-
-  'use strict';
+(function (Drupal, $) {
+  "use strict";
 
   Drupal.behaviors.swapaxe = {
-    attach (context, settings) {
-
-    }
+    attach(context, settings) {
+      // Your swapaxe JavaScript code goes here
+    },
   };
-
-} (Drupal));
+})(Drupal, jQuery);
